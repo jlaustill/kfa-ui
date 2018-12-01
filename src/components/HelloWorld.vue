@@ -1,10 +1,12 @@
 <template>
-  <div class="hello">
+  <v-container fluid>
     <h1>{{ msg }}</h1>
-    <textarea v-model="searchTerm"></textarea>
-    <button v-on:click="getKfa">Translate</button>
-    <pre>{{kfa}}</pre>
-  </div>
+    <v-textarea outline v-model="searchTerm"></v-textarea>
+    <v-btn right v-on:click="getKfa">Translate</v-btn>
+    <v-card>
+      <v-card-text>{{kfa}}</v-card-text>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
