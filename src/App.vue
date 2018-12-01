@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="What would you like to translate?"/>
-  </div>
+  <v-container fluid>
+    <v-layout>
+      <HelloWorld msg="What would you like to translate?"/>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>

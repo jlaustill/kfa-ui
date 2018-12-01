@@ -1,12 +1,12 @@
 <template>
-  <v-container fluid>
+  <v-flex align-self-end>
     <h1>{{ msg }}</h1>
     <v-textarea outline v-model="searchTerm"></v-textarea>
-    <v-btn right v-on:click="getKfa">Translate</v-btn>
+    <v-btn v-on:click="getKfa">Translate</v-btn>
     <v-card>
-      <v-card-text>{{kfa}}</v-card-text>
+      <v-card-text><pre>{{kfa}}</pre></v-card-text>
     </v-card>
-  </v-container>
+  </v-flex>
 </template>
 
 <script>
