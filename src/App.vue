@@ -1,29 +1,22 @@
 <template>
-  <v-container fluid>
-    <v-layout>
-      <HelloWorld msg="What would you like to translate?"/>
-    </v-layout>
-  </v-container>
+  <v-app>
+    <Toolbar />
+
+    <v-content>
+      <trEnslYtX msg="What would you like to translate?" />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import trEnslYtX from "./components/trEsnlYtX.vue";
+import Toolbar from "./components/Toolbar.vue";
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    name: "App",
+    components: {
+        Toolbar,
+        trEnslYtX,
+    },
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
