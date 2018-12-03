@@ -2,7 +2,7 @@
   <v-app>
     <Toolbar />
 
-    <v-content>
+    <v-content class="mx-4">
       <router-view />
     </v-content>
   </v-app>
