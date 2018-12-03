@@ -1,6 +1,6 @@
 <template>
   <v-flex>
-    <h1>{{ msg }}</h1>
+    <h1>What would you like to translate?</h1>
     <v-textarea
       v-model="searchTerm"
       outline
@@ -24,23 +24,17 @@
 import axios from "axios";
 
 export default {
-    name: "trEnslYtX",
-    props: {
-        msg: {
-            type: String,
-            default: "message missing",
-        },
+  name: "trEnslYtX",
+  data: () => ({
+    searchTerm: "",
+    kfa: "",
+  }),
+  methods: {
+    async getKfa() {
+      const result = await axios.get(`http://localhost:8081/translate?english=${encodeURIComponent(this.searchTerm)}`);
+      this.kfa = result.data.kfa;
     },
-    data: () => ({
-        searchTerm: "",
-        kfa: "",
-    }),
-    methods: {
-        async getKfa() {
-            const result = await axios.get(`http://localhost:8081/translate?english=${encodeURIComponent(this.searchTerm)}`);
-            this.kfa = result.data.kfa;
-        },
-    },
+  },
 };
 </script>
 
