@@ -8,7 +8,7 @@
         @click="drawer = !drawer"
       />
       <v-toolbar-title>
-        <span>kfa trEnslYtX</span>
+        <span>kfE trEnslYtX (qwerty phonetic alphabet => kwxti fAnetIk ElfAbet => kfE)</span>
       </v-toolbar-title>
     </v-toolbar>
 
