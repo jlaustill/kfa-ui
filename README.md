@@ -1,4 +1,4 @@
-# kfa-ui
+# kfE-ui
 
 ## Project setup
 ```

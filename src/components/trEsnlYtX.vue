@@ -54,7 +54,7 @@ export default {
   }),
   methods: {
     async getKfa() {
-      const result = await axios.get(`http://${window.location.hostname}:8082/translate?english=${encodeURIComponent(this.searchTerm)}`);
+      const result = await axios.get(`http://${window.location.hostname}:8081/translate?english=${encodeURIComponent(this.searchTerm)}`);
       this.kfa = result.data.kfa;
     },
   },
